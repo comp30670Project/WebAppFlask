@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Urban Cycle</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    
+    <link rel='stylesheet' type='text/css' href='d.css'>
+ 
+</head>
+ 
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a>
+                    </li>
+                    <li role="presentation"><a href="#">Bikes</a>
+                    </li>
+                    <li role="presentation"><a href="showSignUp">Weather</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Urban Cycle</h3>
+        </div>
+ 
+        <div class="jumbotron">
+            <h1>Dublin Bikes App</h1>
+            <p class="lead"></p>
+            <p><a class="btn btn-lg btn-success" href="showSignUp" role="button">Sign up today</a>
+            </p>
+        </div>
+
+        
+  <div id='map' style="height:400px; width:70%; float:left; margin:auto"></div>
+        <script>
+      function initMap() {
+        var uluru = {lat: 53.3498, lng: -6.266155};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASpxtTE9VeSgWx6gVlkd22aQJ_hh_dzaU&callback=initMap">
+    </script>       
+        
+
+<div id="twitter-news" style="float:right; width:30%; margin:auto; height: 400px; overflow:hidden;">
+
+    <a class="twitter-timeline" href="https://twitter.com/Dublin__Weather">Tweets by Dublin__Weather</a>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</div>
+
+        
+        <footer class="footer">
+            <p>&copy; Copyright 2017</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>
