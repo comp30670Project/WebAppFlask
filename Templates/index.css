@@ -1,0 +1,15 @@
+
+#map {
+    height: 400px;
+    width: 70%;
+    float: left;
+    margin: auto;
+}
+
+#twitter-news {
+    width: 30%;
+    float: right;
+    margin: auto;
+    height: 400px;
+    overflow: hidden;
+}
