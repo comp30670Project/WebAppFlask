@@ -1,0 +1,5 @@
+USER = "dbProject"
+PASSWORD = "dbProject"
+URI = "dbproject.ctbyf0mr6g0z.us-west-2.rds.amazonaws.com"
+PORT = "3306"
+DB = "dbProject"
