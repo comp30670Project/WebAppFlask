@@ -19,7 +19,7 @@
         <div class="header">
             <nav>
                 <ul class="nav nav-pills pull-right">
-                    <li role="presentation" class="active"><a href="#">Home</a>
+                    <li role="presentation" class="active"><a href="#">{{ title }}</a>
                     </li>
                     <li role="presentation"><a href="#">Bikes</a>
                     </li>
@@ -31,30 +31,59 @@
         </div>
  
         <div class="jumbotron">
-            <h1>Dublin Bikes App</h1>
+            <h1>{{ heading }}</h1>
             <p class="lead"></p>
+<!--
             <p><a class="btn btn-lg btn-success" href="showSignUp" role="button">Sign up today</a>
             </p>
+-->
         </div>
-       
+        
+
+    <div>
+<!--
+{% block body %}
+    <form method=post>
+      <dl>
+        <dt>Title:
+        <dd><input type=text size=30 name=title>
+        <dt>Text:
+        <dd><textarea name=text rows=5 cols=40></textarea>
+        <dd><input type=submit value=Share>
+      </dl>
+    </form>
+  <ul class=entries>
+  {% for entry in entries %}
+    <li><h2>{{ entry.title }}</h2>{{ entry.text|safe }}
+  {% else %}
+    <li><em>Unbelievable.  No entries here so far</em>
+  {% endfor %}
+  </ul>
+{% endblock %}  
+-->
+        <p> {{ stations }}</p>
+        
+        
+        
+        </div>
 
         
   <div id='map' style="height:400px; width:70%; float:left; margin:auto"></div>
-     <script>
-        function initMap() {
-          var uluru = {lat: 53.3498, lng: -6.266155};
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 10,
-            center: uluru
-          });
-          var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-         });
-         }
+        <script>
+      function initMap() {
+        var uluru = {lat: 53.3498, lng: -6.266155};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
     </script>
     <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASpxtTE9VeSgWx6gVlkd22aQJ_hh_dzaU&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASpxtTE9VeSgWx6gVlkd22aQJ_hh_dzaU&callback=initMap">
     </script>       
         
 
@@ -65,11 +94,14 @@
 
 </div>
 
-    <footer class="footer">
-        <p>&copy; Copyright 2017</p>
-    </footer>
+        
+
+        
+        <footer class="footer">
+            <p>&copy; Copyright 2017</p>
+        </footer>
  
-  </div>
+    </div>
 </body>
  
 </html>
