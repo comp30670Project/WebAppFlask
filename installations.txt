@@ -1,0 +1,3 @@
+pip install simplejson
+pip install mysql.connector
+pip install sqlalchemy
