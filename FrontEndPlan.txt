@@ -1,0 +1,36 @@
+FLASK
+			research
+					- CW
+					- OH
+					- CK
+				Connection between flask data and JS function
+				JSONIFY
+					turning information from database into JSON object through flask
+			app.py
+				updating app.py in order to display correct data when we type it directly into the URL address
+					query to show the most up to date information (as opposed to showing all of the data we have scraped)
+
+
+
+JavaScript
+			research
+					- CW
+					- OH
+					- CK
+				Gaining access to the jsonify'd data and using it in a JavaScript function
+					- XML request?
+					- Jquery? 
+					- using static data for lat and lng to show markers on a map
+						which is the best option?
+							JQuery. (installation)
+							parse the data and display it using a javascript function
+
+
+
+HTML
+		interactive map
+
+CSS
+		overall layout of the website
+
+
