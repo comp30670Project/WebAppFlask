@@ -1,6 +1,6 @@
 # WebAppFlask
 
-Web Application development using Flask
+## Web Application development using Flask
  
  Framework of application developed using Flask
   Connection to database established 
