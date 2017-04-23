@@ -1,0 +1,62 @@
+Web App Development
+WebAppFlask
+        app.py 
+            code
+            
+                Imports - jsonify, flask, sqlalchemy
+                
+                Functions:
+                
+                    main function to render index.html - route = "/"
+                    
+                    fucntion to connect to database
+                        config file
+                    
+                    function to retrieve database
+                    
+                    function to show most up-to-date info for each station - route = "/dbinfo"
+                        SQL query
+                    
+                    function to close connection
+                    
+                    function to display all stations - route = "/stations"
+                        SQL query
+                        
+                    function to display station of specified number - route = "/station/<int:number>"
+                        SQL query
+                    
+                    function to display availability of specified station - route = "/available/<int:number>"
+                        SQL query
+                    
+                    function to display occupancy of specified station - route = "/occupancyy/<int:number>"
+                        SQL query
+                    
+        config.py
+            configuration details to establish connection between Flask and database
+            
+        installations.txt
+            details of installations needed to run application
+            
+        templates
+        
+            index.html
+                css link
+                    code
+                        mainframe for website
+                        Bikes
+                            API key - map (javascript function)
+                            
+                            Historical data (graphs)
+                        Weather
+                            Open weather API on stations
+                            
+                            Twitter weather timeline
+                        
+                        SQL connection - using PHP(put stations on map)
+                
+            index.css
+                design/layout
+                    map
+                    
+                    twitter feed
+        
