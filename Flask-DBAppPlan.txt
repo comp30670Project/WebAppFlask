@@ -52,7 +52,6 @@ WebAppFlask
                             
                             Twitter weather timeline
                         
-                        SQL connection - using PHP(put stations on map)
                 
             index.css
                 design/layout
